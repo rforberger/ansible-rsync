@@ -1,0 +1,20 @@
+---
+
+- name: install pkgs
+  ansible.builtin.apt:
+    name: "{{ packages }}"
+    state: present
+  vars:
+    packages:
+      - rsync
+
+#- name: Enable rsyncd
+#  ansible.builtin.systemd:
+#    name: rsync
+#    enabled: yes
+
+
+
+
+
+
